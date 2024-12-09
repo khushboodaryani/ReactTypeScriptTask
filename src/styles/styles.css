@@ -1,0 +1,131 @@
+
+
+/* Reset margin and padding for all elements to ensure uniformity */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Body styling */
+body {
+  font-family: 'Arial', sans-serif;
+  background-color: #f4f4f4;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 100vh;
+  padding: 20px;
+  overflow-x: hidden;
+}
+
+/* Main container that holds both forms */
+.app-container {
+  display: flex;
+  flex-direction: column;  /* Stack Sign Up and Login forms vertically */
+  justify-content: flex-start;
+  align-items: center;
+  gap: 40px;  /* Space between the forms */
+  max-width: 100%;  /* Ensures it fits within the screen width */
+  width: 100%;
+  padding: 20px;
+}
+
+/* Style for each form section */
+.form-section {
+  background-color: white;
+  padding: 30px;
+  border-radius: 8px;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  width: 100%;
+  max-width: 400px;  /* Ensure forms don't become too wide */
+  position: relative;
+}
+
+/* Header style for each form */
+h1 {
+  text-align: center;
+  color: #333;
+  margin-bottom: 20px;
+  font-size: 26px;
+  font-weight: bold;
+}
+
+/* Form field styles */
+.form-field {
+  margin-bottom: 20px;
+}
+
+label {
+  font-size: 14px;
+  color: #555;
+  display: block;
+  margin-bottom: 5px;
+}
+
+input {
+  width: 100%;
+  padding: 12px;
+  margin-top: 5px;
+  border: 1px solid #ddd;
+  border-radius: 4px;
+  font-size: 16px;
+  transition: border-color 0.3s ease;
+}
+
+input:focus {
+  border-color: #4A90E2;
+  outline: none;
+}
+
+button {
+  width: 100%;
+  padding: 12px;
+  background-color: #4A90E2;
+  color: white;
+  border: none;
+  border-radius: 4px;
+  font-size: 16px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+button:hover {
+  background-color: #357ABD;
+}
+
+small {
+  font-size: 12px;
+  color: #f44336;
+}
+
+/* Link styles */
+a {
+  color: #4A90E2;
+  text-decoration: none;
+}
+
+a:hover {
+  text-decoration: underline;
+}
+
+/* Responsive styles for smaller screens */
+@media screen and (max-width: 600px) {
+  .app-container {
+    gap: 20px;  /* Reduce gap between the forms */
+  }
+
+  .form-section {
+    width: 90%;  /* Allow forms to be more compact on small screens */
+    padding: 15px;
+  }
+
+  h1 {
+    font-size: 22px;  /* Adjust the font size for smaller screens */
+  }
+
+  input,
+  button {
+    padding: 10px;
+  }
+}
