@@ -16,7 +16,7 @@ Prerequisites
 Steps to Run:
 	1.	Clone the repository:
 
-git clone https://github.com/khushboodaryani/ReactTypeScript.git
+git clone [https://github.com/khushboodaryani/ReactTypeScript.git](https://github.com/khushboodaryani/ReactTypeScriptTask.git)
 cd form-app
 
 
